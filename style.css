@@ -1,0 +1,117 @@
+/* style.css: external stylesheet linked to every HTML page */
+
+/* Universal selector */
+* {
+  box-sizing: border-box;
+}
+
+/* Element selector, font property, color, background-color, margin, padding */
+body {
+  font: 16px/1.5 Arial, Helvetica, sans-serif;
+  color: #222222;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+}
+
+/* Element selectors */
+h1, h2, h3 {
+  color: #1a3d5c;
+}
+
+/* Id selector, background-color, padding, border */
+#site-header {
+  background-color: #eef2f5;
+  padding: 15px;
+  border: 1px solid #cccccc;
+}
+
+/* Class selector, font-style property */
+.tools {
+  font-style: italic;
+  color: #555555;
+}
+
+/* Class selector, border property, margin */
+.project {
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+/* Descendant selector: list items inside the skills section */
+#skills li {
+  margin-bottom: 5px;
+}
+
+/* List-style property */
+ul {
+  list-style-type: square;
+}
+
+/* Pseudo-class selectors */
+a:link {
+  color: #1f5c8c;
+}
+
+a:visited {
+  color: #5a3d8c;
+}
+
+a:hover {
+  color: #c0392b;
+}
+
+/* Descendant selector: links inside the nav */
+nav a {
+  margin: 0 5px;
+}
+
+/* Element selector: footer */
+footer {
+  font-style: italic;
+  color: #555555;
+  margin-top: 30px;
+}
+
+/* Class selector: profile image */
+.profile {
+  width: 100px;
+  border: 2px solid #1a3d5c;
+  border-radius: 50%;
+}
+
+/* Element selector: keep video inside the page width */
+video {
+  max-width: 100%;
+  border: 1px solid #cccccc;
+}
+
+/* Element selectors: table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+caption {
+  font-weight: bold;
+  padding: 5px;
+}
+
+th, td {
+  border: 1px solid #cccccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Descendant selector: header row background */
+thead th {
+  background-color: #eef2f5;
+}
+
+/* Id selector: date display */
+#current-date {
+  font-weight: bold;
+}

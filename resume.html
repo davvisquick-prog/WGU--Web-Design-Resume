@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Davvis Quick | Resume</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="site-header">
+  <img class="profile" src="profile.png" alt="Davvis Quick initials logo">
+  <h1>Davvis Quick</h1>
+  <p><strong>Data Analyst</strong><br>Raleigh, NC</p>
+  <nav>
+    <a href="resume.html">Resume</a> |
+    <a href="cover-letter.html">Cover Letter</a> |
+    <a href="career-goals.html">Career Goals</a>
+  </nav>
+  <p>
+    <a href="mailto:davvis_quick@icloud.com">Email</a> |
+    <a href="http://www.linkedin.com/in/davvis-quick-a6b1ba222">LinkedIn</a> |
+    <a href="https://github.com/davvisquick-prog">GitHub</a>
+  </p>
+</header>
+
+<main>
+
+<section>
+  <h2>Summary</h2>
+  <p>Data analyst with about <strong>eight years</strong> of K-12 and healthcare IT experience. I use <span class="tools">SQL, Python, and Tableau</span> to turn messy operational data into decisions that save money and improve outcomes, including an analysis that identified $2.1M in recoverable software spending and a predictive model that flags student attrition risk. I focus on <em>clear answers that leaders can act on</em>.</p>
+  <p>Listen to a short introduction:</p>
+  <audio controls>
+    <source src="intro.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <article class="project">
+    <h3>IT Analyst, Wake County Public School System</h3>
+    <p class="tools">Raleigh, NC | Current role</p>
+    <ul>
+      <li>Independently support technology operations across eight school sites with minimal oversight.</li>
+      <li>Coordinate with each school's Tech Contact to manage Chromebook fleets and resolve reported issues, giving newer contacts hands-on guidance and veteran contacts room to work independently.</li>
+      <li>Noticed a pattern of underused and duplicated software licenses across school sites and built a data analysis blueprint that was handed to leadership for implementation.</li>
+    </ul>
+  </article>
+
+  <article class="project">
+    <h3>Information Technology, Duke University Health System</h3>
+    <p class="tools">Durham, NC | Previous role</p>
+  </article>
+
+  <article class="project">
+    <h3>Information Technology, Orange County Public Schools</h3>
+    <p class="tools">Previous role</p>
+  </article>
+
+  <p>Recognized with Employee of Excellence awards from two prior employers.</p>
+</section>
+
+<section>
+  <h2>Projects</h2>
+
+  <table>
+    <caption>Portfolio Project Summary</caption>
+    <thead>
+      <tr>
+        <th>Project</th>
+        <th>Tools</th>
+        <th>Data</th>
+        <th>Key Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>License Utilization Analysis</td>
+        <td>SQL, Tableau</td>
+        <td>Synthetic license data</td>
+        <td>$2.1M in recoverable spending</td>
+      </tr>
+      <tr>
+        <td>Ticketing System Funnel Analysis</td>
+        <td>Python, SQL, Tableau</td>
+        <td>Support ticket data</td>
+        <td>Found bottlenecks affecting SLAs</td>
+      </tr>
+      <tr>
+        <td>ELA Student Assessment Analysis</td>
+        <td>SQL, Tableau</td>
+        <td>3 years of EOG results</td>
+        <td>Mapped achievement gaps</td>
+      </tr>
+      <tr>
+        <td>Student Retention Risk Model</td>
+        <td>Python, SQL</td>
+        <td>4,424 students (public)</td>
+        <td>0.971 AUC, 94.1% accuracy</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <article class="project">
+    <h3>License Utilization Analysis</h3>
+    <p class="tools">SQL, Tableau, Spreadsheets</p>
+    <p>Identified $2.1M in recoverable spending from unused software licenses and built Tableau dashboards to support procurement decisions. Built on synthetic data.</p>
+  </article>
+
+  <article class="project">
+    <h3>Ticketing System Funnel Analysis</h3>
+    <p class="tools">Python, SQL, Tableau, Excel</p>
+    <p>Built a Python ETL pipeline for support ticket data, then used SQL and Tableau to analyze resolution times, funnel drop-off, and bottlenecks affecting SLA performance.</p>
+  </article>
+
+  <article class="project">
+    <h3>ELA Student Assessment Analysis</h3>
+    <p class="tools">SQL, Tableau, Excel</p>
+    <p>Analyzed three years of Charlotte-Mecklenburg Schools EOG assessment data to identify achievement gaps across schools, grade levels, and student groups.</p>
+  </article>
+
+  <article class="project">
+    <h3>Student Retention Risk Model</h3>
+    <p class="tools">Python, SQL, Tableau, Excel</p>
+    <p>Built a logistic regression model on a public dataset of 4,424 students that reached 0.971 AUC and 94.1% accuracy in flagging dropout risk.</p>
+  </article>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>SQL (PostgreSQL, MySQL)</li>
+    <li>Python (pandas, scikit-learn, ETL pipelines)</li>
+    <li>Predictive modeling (logistic regression, classification)</li>
+    <li>Tableau, Power BI, and data visualization</li>
+    <li>Excel and exploratory data analysis</li>
+    <li>Version control (Git/GitHub)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Education and Certifications</h2>
+  <ul>
+    <li>B.S. Data Analytics, Western Governors University (expected 2027)</li>
+    <li>Google Data Analytics Certificate</li>
+    <li>IBM certification</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <hr>
+  <p>Today's date:</p>
+  <div id="current-date"></div>
+  <p>&copy; 2026 Davvis Quick</p>
+</footer>
+
+<script>
+  // Inline JavaScript: write a message to the browser console
+  console.log("Welcome to Davvis Quick's resume page.");
+
+  // Inline JavaScript: populate the div with today's date
+  document.getElementById("current-date").textContent = new Date().toLocaleDateString("en-US", {
+    weekday: "long", year: "numeric", month: "long", day: "numeric"
+  });
+</script>
+
+</body>
+</html>
