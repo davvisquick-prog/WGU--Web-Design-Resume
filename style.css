@@ -115,3 +115,21 @@ thead th {
 #current-date {
   font-weight: bold;
 }
+
+/* Element selectors: contact form */
+fieldset {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #1a3d5c;
+}
+
+/* Descendant selector: form inputs */
+form input, form select, form textarea {
+  padding: 5px;
+  font: inherit;
+}

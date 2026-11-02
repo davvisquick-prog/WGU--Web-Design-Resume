@@ -9,6 +9,7 @@
 <body>
 
 <header id="site-header">
+  <img class="profile" src="profile.png" alt="Davvis Quick initials logo">
   <h1>Davvis Quick</h1>
   <p>Career Goals</p>
   <nav>
@@ -47,6 +48,71 @@
       <source src="intro.mp4" type="video/mp4">
       Your browser does not support the video element.
     </video>
+  </section>
+
+  <section>
+    <h2>Audio Introduction</h2>
+    <audio controls>
+      <source src="intro.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:davvis_quick@icloud.com" method="post" enctype="text/plain">
+      <fieldset>
+        <legend>Your Information</legend>
+
+        <label for="first-name">First Name:</label><br>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+
+        <label for="last-name">Last Name:</label><br>
+        <input type="text" id="last-name" name="last-name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="company">Company or Organization:</label><br>
+        <input type="text" id="company" name="company"><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Reason for Contact</legend>
+
+        <label for="reason">Reason:</label><br>
+        <select id="reason" name="reason" required>
+          <option value="">Select one</option>
+          <option value="job">Job opportunity</option>
+          <option value="project">Project collaboration</option>
+          <option value="networking">Networking</option>
+          <option value="other">Other</option>
+        </select><br><br>
+
+        <p>Preferred contact method:</p>
+        <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+        <label for="contact-email">Email</label>
+        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+        <label for="contact-phone">Phone</label><br><br>
+
+        <p>Areas of interest:</p>
+        <input type="checkbox" id="sql" name="interests" value="sql">
+        <label for="sql">SQL</label>
+        <input type="checkbox" id="python" name="interests" value="python">
+        <label for="python">Python</label>
+        <input type="checkbox" id="tableau" name="interests" value="tableau">
+        <label for="tableau">Tableau</label><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+      </fieldset>
+
+      <input type="submit" value="Send">
+      <input type="reset" value="Clear">
+    </form>
   </section>
 
 </main>
